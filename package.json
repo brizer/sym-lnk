@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/brizer/sym-lnk#readme",
   "dependencies": {
+    "del": "^4.1.0",
+    "inquirer": "^6.2.2",
     "pify": "^4.0.1"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.12"
   }
 }
