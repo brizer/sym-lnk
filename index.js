@@ -69,7 +69,7 @@ const addSymlink = async (options = {}) => {
           );
         }
       }
-      if (fs.lstatSync(dest).isSymbolicLink()) {
+      if (fs.existsSync(dest) && fs.lstatSync(dest).isSymbolicLink()) {
         await del(dest);
       }
       await fsp.symlink(item.path, item.alias);
